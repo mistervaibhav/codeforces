@@ -5,21 +5,20 @@
 ```python
 
 import sys
-input = sys.stdin.readline
 
 ############ ---- Input Functions ---- ############
-def inp():
-    return(int(input()))
+def single_integer_input():
+    return(int(sys.stdin.readline()))
 
-def inlt():
-    return(list(map(int,input().split())))
+def array_of_integers_input():
+    return(list(map(int,sys.stdin.readline().split())))
 
-def insr():
-    s = input()
+def array_of_chars_input():
+    s = sys.stdin.readline()
     return(list(s[:len(s) - 1]))
 
-def invr():
-    return(map(int,input().split()))
+def space_separated_integers_input():
+    return(map(int,sys.stdin.readline().split()))
 
 if __name__ == '__main__':
     # Start coding
